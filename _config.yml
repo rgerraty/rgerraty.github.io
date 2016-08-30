@@ -5,7 +5,7 @@
 #
 title: Raphael Gerraty
 email:
-description: A simple and awesome blog theme powered by jekyll.
+description: Web notebook
 url: # the base hostname & protocol for your site
 
 
@@ -37,7 +37,7 @@ owner:
   avatar: bio-photo.jpg
   job: "PhD Student"
   bio: "Columbia University/Cognitive Neuroscience"
-  email:
+  email: rtg2116
   disqus-shortname:
   twitter: #username
   facebook: #username
@@ -48,7 +48,7 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: rgerraty#username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username
