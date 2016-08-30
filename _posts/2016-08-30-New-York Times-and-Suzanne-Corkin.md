@@ -28,7 +28,9 @@ We are living through a period of uncertainty when it comes to interpreting the 
 
 Back to the NYTM. Suzanne Corkin's comments make it clear that: 
 
-1. She felt the data collected from H.M. were hers to share or not as she deemed appropriate 2. Not all of the experiments conducted yielded results she saw as worth reporting on 3. The published data are in some sense "true-er" than unpublished data
+1. She felt the data collected from H.M. were hers to share or not as she deemed appropriate 
+2. Not all of the experiments conducted yielded results she saw as worth reporting on 
+3. The published data are in some sense "true-er" than unpublished data
 
 To me, these sound a lot like the problems many of us have with the way psychology has been practiced generally. The data is ours to find the story in, we will report the results our methods declare significant, and the overarching theoretical narrative will come from patterns in the published record. In that sense, her behavior seems no different from what many scientists were trained to do, and she should not be singled out for it. However, I imagine most non-scientists would find this general pattern of scientific reporting *more* shocking than the idea of an individual neuropsychologist scheming to destroy any data that does not fit her story. 
 
