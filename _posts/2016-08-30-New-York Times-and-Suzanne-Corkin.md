@@ -24,15 +24,11 @@ and later:
 
 I think much of the response to this article has missed a major point: the attitude and behavior towards data that are apparent in Dr. Corkin's quotes *have historically been the norm in the field*. And we are currently paying for it.  
 
-We are living through a period of uncertainty when it comes to interpreting the scientific record. It is becoming clearer and clearer that the traditional methods of psychological and neuroscientific inquiry are not up to the challenges we put in front of them. Some of the more problematic aspects of our current (but hopefully changing!) behavior are proprietary treatment of data, a ritualistic approach to hypothesis testing, and overconfidence in published results, paired with publication bias and post-hoc interpretations. 
+We are living through a period of uncertainty when it comes to interpreting the scientific record. It is becoming clearer and clearer that the traditional ways of analyzing and interpreting data in psychology and neuroscience are not up to the challenges we put in front of them. Some of the more problematic aspects of our current (but hopefully changing!) behavior are proprietary treatment of data, a ritualistic approach to hypothesis testing, and overconfidence in published results, paired with publication bias and post-hoc interpretations. 
 
 Back to the NYTM. Suzanne Corkin's comments make it clear that: 
 
-1) She felt the data collected from H.M. were hers to share or not as she deemed appropriate
-
-2) Not all of the experiments conducted yielded results she saw as worth reporting on
-
-3) The published data are in some sense "true-er" than unpublished data
+1. She felt the data collected from H.M. were hers to share or not as she deemed appropriate 2. Not all of the experiments conducted yielded results she saw as worth reporting on 3. The published data are in some sense "true-er" than unpublished data
 
 To me, these sound a lot like the problems many of us have with the way psychology has been practiced generally. The data is ours to find the story in, we will report the results our methods declare significant, and the overarching theoretical narrative will come from patterns in the published record. In that sense, her behavior seems no different from what many scientists were trained to do, and she should not be singled out for it. However, I imagine most non-scientists would find this general pattern of scientific reporting *more* shocking than the idea of an individual neuropsychologist scheming to destroy any data that does not fit her story. 
 
