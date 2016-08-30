@@ -37,7 +37,7 @@ owner:
   avatar: bio-photo.jpg
   job: "PhD Student"
   bio: "Columbia University/Cognitive Neuroscience"
-  email: rtg2116
+  email: rtg2116@columbia.edu
   disqus-shortname:
   twitter: #username
   facebook: #username
@@ -48,7 +48,7 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: rgerraty#username
+  github: rgerraty
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username
