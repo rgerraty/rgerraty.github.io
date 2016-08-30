@@ -1,9 +1,8 @@
 ---
+layout: page
 permalink: /pubs/
 title: "Publications"
 ---
-
-{% include base_path %}
 
 - **Gerraty R.T.**, Davidow J.Y., Galvan A., Bassett D.S., Shohamy D. Dynamic flexibility in striatal-cortical circuits supports reinforcement learning. (submitted)
 
