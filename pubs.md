@@ -3,8 +3,6 @@ permalink: /pubs/
 title: "Publications"
 ---
 
-{% include base_path %}
-
 - **Gerraty R.T.**, Davidow J.Y., Galvan A., Bassett D.S., Shohamy D. Dynamic flexibility in striatal-cortical circuits supports reinforcement learning. (submitted)
 
 - Parker, D., **Gerraty, R. T.**, & Razlighi, Q. R. (2015). Optimal signal recovery from interleaved FMRI data. In Biomedical Imaging (ISBI), 2015 IEEE 12th International Symposium on (pp. 1372-1375). IEEE.
