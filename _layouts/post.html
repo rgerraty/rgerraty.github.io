@@ -37,9 +37,6 @@ layout: default
 
   <article class="post-content">
     {{ content }}
-    {% if site.comments.provider and page.comments %}
-      {% include comments.html %}
-    {% endif %}
   </article>
 </div>
 
@@ -61,3 +58,8 @@ layout: default
   </ul>
 </div><!-- end share-buttons -->
 
+<div class="comments-section">
+ {% if site.comments.provider and page.comments %}
+      {% include comments.html %}
+    {% endif %}
+</div>
