@@ -40,29 +40,3 @@ I think we still have a lot of work to do cleaning house in terms of analysis an
 [article1]: http://www.nytimes.com/2016/08/07/magazine/the-brain-that-couldnt-remember.html
 [article2]: http://www.nytimes.com/2016/08/21/magazine/the-8-716-issue.html?rref=collection%2Fsectioncollection%2Fmagazine&action=click&contentCollection=magazine&region=stream&module=stream_unit&version=latest&contentPlacement=5&pgtype=sectionfront
 [article3]: http://bcs.mit.edu/news-events/news/additional-information-august-20-2016-further-rebutting-luke-dittrich%E2%80%99s-allegations
-
-
-{% if page.comments %} 
-<div id="disqus_thread"></div>
-<script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-     */
-    /*
-    var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-        var d = document, s = d.createElement('script');
-        
-        s.src = '//corkin-nyt.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
-        
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-{% endif %}
