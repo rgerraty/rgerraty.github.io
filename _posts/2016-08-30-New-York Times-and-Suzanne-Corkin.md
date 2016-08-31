@@ -58,7 +58,7 @@ I think we still have a lot of work to do cleaning house in terms of analysis an
     (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
         var d = document, s = d.createElement('script');
         
-        s.src = '//EXAMPLE.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+        s.src = '//test.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
         
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
