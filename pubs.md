@@ -6,6 +6,8 @@ title: "Publications"
 
 - **Gerraty R.T.**, Davidow J.Y., Galvan A., Bassett D.S., Shohamy D. Dynamic flexibility in striatal-cortical circuits supports reinforcement learning. (submitted)
 
+- Liu, X, Parker, D., **Gerraty, R.T.**, Razlighi, Q.R. Brain atrophy introduces differences between young and old BOLD responses (submitted)
+
 - Parker, D., **Gerraty, R. T.**, & Razlighi, Q. R. (2015). Optimal signal recovery from interleaved FMRI data. In Biomedical Imaging (ISBI), 2015 IEEE 12th International Symposium on (pp. 1372-1375). IEEE.
 
 - **Gerraty, R. T.**, Davidow, J. Y., Wimmer, G. E., Kahn, I., & Shohamy, D. (2014). Transfer of Learning Relates to Intrinsic Connectivity between Hippocampus, Ventromedial Prefrontal Cortex, and Large-Scale Networks. The Journal of Neuroscience, 34(34), 11297-11303. [[PDF]({{ site.url }}/assets/pdf/gerraty_JNeuro2014.pdf)]
