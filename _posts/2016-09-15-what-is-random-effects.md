@@ -70,7 +70,7 @@ In a Bayesian analysis, is the finite sample standard deviation the variation be
 
 
 **Raphael:**
-The superpopulation \\( \sigma \\) characterizes the uncertainty for predicting a new coefficient from your grouping variable, whereas the finite-population $s$ describes the existing coefficients
+The superpopulation \\( \sigma \\) characterizes the uncertainty for predicting a new coefficient from your grouping variable, whereas the finite-population \\( s \\) describes the existing coefficients
 
 
 So on the one hand, these reflect one part of the FE/RE distinction, in that one of them refers to the variation between the effects sampled and the other refers to the effects you could sample. But on the other hand, for a random effects analysis you have estimated \\( \sigma \\) to regularize your effects that you use to compute \\( s \\)!
@@ -82,11 +82,11 @@ I am not sure what exactly the \\( \sigma \\) term is supposed to mean if you ar
 
 
 **Niall:**
-Thanks Rapael. I see the distinction you are making, but what I am confused about is what are the coefficients that constitute the finite population. They don't seem to be the OLS estimates you would get in traditional anova. That's why I'm wondering if they are the shrunken estimates--shrunken based on the superpopulation variance \\( \sigma^{2}\\?
+Thanks Rapael. I see the distinction you are making, but what I am confused about is what are the coefficients that constitute the finite population. They don't seem to be the OLS estimates you would get in traditional anova. That's why I'm wondering if they are the shrunken estimates--shrunken based on the superpopulation variance \\( \sigma^{2} \\)?
 
 
 **Raphael:**
-My understanding is that in lme4 they are ML/REML-derived modes of the conditional data likelihoods or in stan they are the full marginal posterior distributions of the effects given the data. In either case I think they would be estimates shrunk by the \\( \sigma\\. Which is maybe why Doug Bates also says that they should be non-exhaustive samples from a population of levels, consistent with the older definition of random effects. 
+My understanding is that in lme4 they are ML/REML-derived modes of the conditional data likelihoods or in stan they are the full marginal posterior distributions of the effects given the data. In either case I think they would be estimates shrunk by the \\( \sigma \\). Which is maybe why Doug Bates also says that they should be non-exhaustive samples from a population of levels, consistent with the older definition of random effects. 
 
 
 50 states is maybe a better example for this question than the 5 personality measures. I guess if you think you have all the levels of some grouping variable, the question is what sense it makes to constrain estimates with a parameter that models something that may not exist (the super-population)?
@@ -116,9 +116,9 @@ I think the basic question is whether you want to treat them as realizations of 
 **Raphael:**
 We didn't solve anything, but I think we have clarified some things. Here is where I think we are:
 
-1) Whether you call it a random effect or varying estimates within a grouping variable, the procedure we are talking about models these effects as varying around an mean with something like $\beta \sim N(0,\sigma^{2})$.  Depending on how bayesian you are willing to get, the effects are either full posterior distributions or predictions on which the likelihood is conditional. 
+1) Whether you call it a random effect or varying estimates within a grouping variable, the procedure we are talking about models these effects as varying around an mean with something like \\( \beta \sim N(0,\sigma^{2}) \\).  Depending on how bayesian you are willing to get, the effects are either full posterior distributions or predictions on which the likelihood is conditional. 
 
-2) While this approach differentiates between superpopulation $\sigma$ and finite-population $s$, it is still the case that you generate the finite-population $s$ by regularizing your effects with superpopulation $\sigma$. 
+2) While this approach differentiates between superpopulation \\( \sigma \\) and finite-population \\( s \\), it is still the case that you generate the finite-population $s$ by regularizing your effects with superpopulation \\( \sigma \\). 
 
 3) In cases where you can safely say these effects were sampled from some larger group of levels (like subjects, universities), we all agree this is a good approach: you should pool your uncertainty to regularize the estimates.
 
