@@ -2,7 +2,7 @@
 layout: post
 category : [probability and statistics]
 excerpt: "Estimating variance of interest in a multilevel model, part I"
-title: "What is this thing called random effects?: a conversation with Niall Bolger and Bruce Dore"
+title: "What is this thing called random effects?: a conversation with Niall Bolger"
 comments: true
 ---
 
