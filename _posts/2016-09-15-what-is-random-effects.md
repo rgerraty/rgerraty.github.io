@@ -16,7 +16,7 @@ Subject-level means or effects are estimated as:
 
 $$\beta_{i} \sim N(\beta_{G},\sigma^{2})$$
 
-This step will pull subject-level effects towards the mean \\( \beta_{g} \\) depending on the uncertainty at the population and group levels. So it regularizes your estimates for individual subjects by modeling them as "draws" from a normal distribution. But what is the right move if you don't think your effects are sampled from a larger population? What if you still want to regularize them with the mean? We ended up in an email conversation with [Niall Bolger][link2], repeated measures [wizard][link3]. The following is that conversation, edited for clarity, length, and errors on my part. Skip to the end if you want a summary!
+This step will pull subject-level effects towards the mean \\( \beta_{G} \\) depending on the uncertainty at the population and group levels. So it regularizes your estimates for individual subjects by modeling them as "draws" from a normal distribution. But what is the right move if you don't think your effects are sampled from a larger population? What if you still want to regularize them with the mean? We ended up in an email conversation with [Niall Bolger][link2], repeated measures [wizard][link3]. The following is that conversation, edited for clarity, length, and errors on my part. Skip to the end if you want a summary!
 
 **Niall Bolger:**
 I had fun reading your report on your analyses of the personality datasets from Michigan State. Estimating a single model for all five personality factors is the right way to go. Whether to treat the factors themselves as fixed effects or as realizations of a random variable is a controversial issue. Big 5 personality psychologists would be dead against it, I imagine. They see each factor as a distinct, fixed dimension. 
@@ -116,17 +116,12 @@ I think the basic question is whether you want to treat them as realizations of 
 **Raphael:**
 We didn't solve anything, but I think we have clarified some things. Here is where I think we are:
 
-1) Whether you call it a random effect or varying estimates within a grouping variable, the procedure we are talking about models these effects as varying around an mean with something like \\( \beta \sim N(0,\sigma^{2}) \\).  Depending on how bayesian you are willing to get, the effects are either full posterior distributions or predictions on which the likelihood is conditional. 
-
-2) While this approach differentiates between superpopulation \\( \sigma \\) and finite-population \\( s \\), it is still the case that you generate the finite-population \\( s \\) by regularizing your effects with superpopulation \\( \sigma \\). 
-
-3) In cases where you can safely say these effects were sampled from some larger group of levels (like subjects, universities), we all agree this is a good approach: you should pool your uncertainty to regularize the estimates.
-
-4) It is less clear what to do if you think or know that you have all the levels there are (states definitely, personality factors and races maybe?). The older interpretation is that these are not randomly sampled from a larger population, so it doesn't make sense to model them as normally distributed.
-
-5) For some of us, though, there is a desire to regularize estimates whenever we can, especially if there are multiple estimates! We want to pool our uncertainty to get better estimates. Positing a normal distribution of effects does this, even if we can't really say "we sampled these effects from a larger population." How does this make sense though?
-
-6) My naive response is just to say that the probability distribution is not a model of the frequency of random samples, it is a representation of our uncertainty about the distance of these effects from their average. This is probably not justification enough!
+1. Whether you call it a random effect or varying estimates within a grouping variable, the procedure we are talking about models these effects as varying around an mean with something like \\( \beta \sim N(0,\sigma^{2}) \\).  Depending on how bayesian you are willing to get, the effects are either full posterior distributions or predictions on which the likelihood is conditional. 
+2. While this approach differentiates between superpopulation \\( \sigma \\) and finite-population \\( s \\), it is still the case that you generate the finite-population \\( s \\) by regularizing your effects with superpopulation \\( \sigma \\). 
+3. In cases where you can safely say these effects were sampled from some larger group of levels (like subjects, universities), we all agree this is a good approach: you should pool your uncertainty to regularize the estimates.
+4. It is less clear what to do if you think or know that you have all the levels there are (states definitely, personality factors and races maybe?). The older interpretation is that these are not randomly sampled from a larger population, so it doesn't make sense to model them as normally distributed.
+5. For some of us, though, there is a desire to regularize estimates whenever we can, especially if there are multiple estimates! We want to pool our uncertainty to get better estimates. Positing a normal distribution of effects does this, even if we can't really say "we sampled these effects from a larger population." How does this make sense though?
+6. My naive response is just to say that the probability distribution is not a model of the frequency of random samples, it is a representation of our uncertainty about the distance of these effects from their average. This is probably not justification enough!
 
 To be continued...
 
