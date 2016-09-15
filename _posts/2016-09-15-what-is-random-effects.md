@@ -116,7 +116,7 @@ I think the basic question is whether you want to treat them as realizations of 
 **Raphael:**
 We didn't solve anything, but I think we have clarified some things. Here is where I think we are:
 
-1. Whether you call it a random effect or varying estimates within a grouping variable, the procedure we are talking about models these effects as varying around an mean with something like \\( \beta \sim N(0,\sigma^{2}) \\).  Depending on how bayesian you are willing to get, the effects are either full posterior distributions or predictions on which the likelihood is conditional. 
+1. Whether you call it a random effect or varying estimates within a grouping variable, the procedure we are talking about models these effects as varying around a mean with something like \\( \beta \sim N(0,\sigma^{2}) \\).  Depending on how bayesian you are willing to get, the effects are either full posterior distributions or predictions on which the likelihood is conditional. 
 
 2. While this approach differentiates between superpopulation \\( \sigma \\) and finite-population \\( s \\), it is still the case that you generate the finite-population \\( s \\) by regularizing your effects with superpopulation \\( \sigma \\). 
 
