@@ -118,7 +118,7 @@ We didn't solve anything, but I think we have clarified some things. Here is whe
 
 1) Whether you call it a random effect or varying estimates within a grouping variable, the procedure we are talking about models these effects as varying around an mean with something like \\( \beta \sim N(0,\sigma^{2}) \\).  Depending on how bayesian you are willing to get, the effects are either full posterior distributions or predictions on which the likelihood is conditional. 
 
-2) While this approach differentiates between superpopulation \\( \sigma \\) and finite-population \\( s \\), it is still the case that you generate the finite-population $s$ by regularizing your effects with superpopulation \\( \sigma \\). 
+2) While this approach differentiates between superpopulation \\( \sigma \\) and finite-population \\( s \\), it is still the case that you generate the finite-population \\( s \\) by regularizing your effects with superpopulation \\( \sigma \\). 
 
 3) In cases where you can safely say these effects were sampled from some larger group of levels (like subjects, universities), we all agree this is a good approach: you should pool your uncertainty to regularize the estimates.
 
