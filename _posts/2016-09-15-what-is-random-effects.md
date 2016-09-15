@@ -8,7 +8,7 @@ comments: true
 
 [Bruce Dore][link1] and I have been examining different ways of estimating uncertainty about variances, using an example of personality questionaires. How do you model differences in personality scores across universities? One of the interesting (to us at least!) questions that comes up in cases like this is how and when to pool your uncertainty at different levels of the model. A core part of multilevel modeling is to let my knowlege of the distribution of subject effects, for example, influence my estimates of each individual subject. You could write that out as follows, in the simple case of taking a mean:
 
-The data for subject \\i\\ is:
+The data for subject \\( i \\) is:
 
 $$y_{i} \sim N(\beta_{i},\tau_{i}^{2})$$
 
@@ -16,10 +16,8 @@ Subject-level means or effects are estimated as:
 
 $$\beta_{i} \sim N(\beta_{G},\sigma^{2})$$
 
-This step will pull subject-level effects towards the mean \\\beta_{g}\\ depending on the uncertainty at the population and group levels. So it regularizes your estimates for individual subjects by modeling them as "draws" from a normal distribution. But what is the right move if you don't think your effects are sampled from a larger population? What if you still want to regularize them with the mean? We ended up in an email conversation with [Niall Bolger][link2], repeated measures [wizard][link3]. The following is that conversation, edited for clarity, length, and errors on my part. Skip to the end if you want a summary!
+This step will pull subject-level effects towards the mean \\( \beta_{g} \\) depending on the uncertainty at the population and group levels. So it regularizes your estimates for individual subjects by modeling them as "draws" from a normal distribution. But what is the right move if you don't think your effects are sampled from a larger population? What if you still want to regularize them with the mean? We ended up in an email conversation with [Niall Bolger][link2], repeated measures [wizard][link3]. The following is that conversation, edited for clarity, length, and errors on my part. Skip to the end if you want a summary!
 
-+Read the conversation
- -----------------
 **Niall Bolger:**
 I had fun reading your report on your analyses of the personality datasets from Michigan State. Estimating a single model for all five personality factors is the right way to go. Whether to treat the factors themselves as fixed effects or as realizations of a random variable is a controversial issue. Big 5 personality psychologists would be dead against it, I imagine. They see each factor as a distinct, fixed dimension. 
 
@@ -64,7 +62,7 @@ Just wanted to contribute to this discussion by pointing us to this relevant exc
 
 
 **Raphael:**
-I think the discussion of computing superpopulation \\\sigma\\ vs finite-population \\s\\ variance may be useful for thinking about in what sense factors whose levels have been exhausted can be considered grouping variables or random effects, but it's not clear to me whether the focus on this finite-population variance allows us to disregard "definition 3" from the ANOVA paper (that random effects must be sampled from a larger population). 
+I think the discussion of computing superpopulation \\( \sigma \\) vs finite-population \\( s \\) variance may be useful for thinking about in what sense factors whose levels have been exhausted can be considered grouping variables or random effects, but it's not clear to me whether the focus on this finite-population variance allows us to disregard "definition 3" from the ANOVA paper (that random effects must be sampled from a larger population). 
 
 
 **Niall:**
@@ -72,23 +70,23 @@ In a Bayesian analysis, is the finite sample standard deviation the variation be
 
 
 **Raphael:**
-The superpopulation \\\sigma\\ characterizes the uncertainty for predicting a new coefficient from your grouping variable, whereas the finite-population $s$ describes the existing coefficients
+The superpopulation \\( \sigma \\) characterizes the uncertainty for predicting a new coefficient from your grouping variable, whereas the finite-population $s$ describes the existing coefficients
 
 
-So on the one hand, these reflect one part of the FE/RE distinction, in that one of them refers to the variation between the effects sampled and the other refers to the effects you could sample. But on the other hand, for a random effects analysis you have estimated \\\sigma\\ to regularize your effects that you use to compute \\s\\!
+So on the one hand, these reflect one part of the FE/RE distinction, in that one of them refers to the variation between the effects sampled and the other refers to the effects you could sample. But on the other hand, for a random effects analysis you have estimated \\( \sigma \\) to regularize your effects that you use to compute \\( s \\)!
 
 
-I am not sure what exactly the \\\sigma\\ term is supposed to mean if you are claiming to have sampled every level, as in the personality example, but I also found this Yates quote from the paper helpful:
+I am not sure what exactly the \\( \sigma \\) term is supposed to mean if you are claiming to have sampled every level, as in the personality example, but I also found this Yates quote from the paper helpful:
 
 >“. . . whether the factor levels are a random selection from some defined set (as might be the case with, say, varieties), or are deliberately chosen by the experimenter, does not affect the logical basis of the formal analysis of variance or the derivation of variance components.”
 
 
 **Niall:**
-Thanks Rapael. I see the distinction you are making, but what I am confused about is what are the coefficients that constitute the finite population. They don't seem to be the OLS estimates you would get in traditional anova. That's why I'm wondering if they are the shrunken estimates--shrunken based on the superpopulation variance \\\sigma^{2}\\?
+Thanks Rapael. I see the distinction you are making, but what I am confused about is what are the coefficients that constitute the finite population. They don't seem to be the OLS estimates you would get in traditional anova. That's why I'm wondering if they are the shrunken estimates--shrunken based on the superpopulation variance \\( \sigma^{2}\\?
 
 
 **Raphael:**
-My understanding is that in lme4 they are ML/REML-derived modes of the conditional data likelihoods or in stan they are the full marginal posterior distributions of the effects given the data. In either case I think they would be estimates shrunk by the \\\sigma\\. Which is maybe why Doug Bates also says that they should be non-exhaustive samples from a population of levels, consistent with the older definition of random effects. 
+My understanding is that in lme4 they are ML/REML-derived modes of the conditional data likelihoods or in stan they are the full marginal posterior distributions of the effects given the data. In either case I think they would be estimates shrunk by the \\( \sigma\\. Which is maybe why Doug Bates also says that they should be non-exhaustive samples from a population of levels, consistent with the older definition of random effects. 
 
 
 50 states is maybe a better example for this question than the 5 personality measures. I guess if you think you have all the levels of some grouping variable, the question is what sense it makes to constrain estimates with a parameter that models something that may not exist (the super-population)?
